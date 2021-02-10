@@ -1,0 +1,8 @@
+.user-card {
+    height: 300px;
+    width: 100px;
+    background: grey;
+    border: red;
+    border-width: 3px;
+    border-style: solid;
+}
