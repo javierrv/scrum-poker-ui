@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import DeckComponent from './components/deck/DeckComponent';
-import UserCardComponent from './components/user-card/UserCardComponent';
 import reportWebVitals from './reportWebVitals';
+import GameDashboard from './components/game-dashboard/game-dashboard';
 
 ReactDOM.render(
   <React.StrictMode>
-    <UserCardComponent />
+    <GameDashboard />
     <DeckComponent />
   </React.StrictMode>,
   document.getElementById('root')
