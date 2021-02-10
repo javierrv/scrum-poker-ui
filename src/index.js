@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import DeckComponent from './components/deck/DeckComponent';
 import UserCardComponent from './components/user-card/UserCardComponent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <UserCardComponent />
     <DeckComponent />
   </React.StrictMode>,
