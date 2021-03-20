@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 import DeckComponent from './components/deck/DeckComponent';
 import reportWebVitals from './reportWebVitals';
 import GameDashboard from './components/game-dashboard/game-dashboard';
@@ -8,9 +9,12 @@ import LoginComponent from './components/login/LoginComponent';
 
 ReactDOM.render(
   <React.StrictMode>
-    <LoginComponent />
+    {/* }<LoginComponent />
     <GameDashboard />
-    <DeckComponent />
+    <DeckComponent /> */}
+    <div>
+      <App />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import LoginComponent from './components/login/LoginComponent';
+import GameDashboard from './components/game-dashboard/game-dashboard';
+
 
 function App() {
+
+  const usernameAlreadySelected = false;
+  let initialComponent;
+
+  if (usernameAlreadySelected) {
+    initialComponent = <LoginComponent />
+  } else {
+    initialComponent = <GameDashboard />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {initialComponent}
     </div>
   );
 }
