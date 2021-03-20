@@ -4,9 +4,11 @@ import './index.css';
 import DeckComponent from './components/deck/DeckComponent';
 import reportWebVitals from './reportWebVitals';
 import GameDashboard from './components/game-dashboard/game-dashboard';
+import LoginComponent from './components/login/LoginComponent';
 
 ReactDOM.render(
   <React.StrictMode>
+    <LoginComponent />
     <GameDashboard />
     <DeckComponent />
   </React.StrictMode>,
